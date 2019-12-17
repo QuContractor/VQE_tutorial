@@ -11,9 +11,13 @@ A simple VQE tutorial for beginners.
 ## VQE 简单示例
 
 变分量子本征求解 (VQE) 通过制备带有参数的试探波函数(Ansatz)，通过测量体系哈密顿量在该波函数下面的平均值，最后使用经典优化算法来最小化这个平均值，从而确定波函数相关参数。根据基本的原理：
+
+
 $$
 \frac{<\varphi(\theta)|H|\varphi(\theta)>}{<\varphi(\theta)|\varphi(\theta)>}\geq E_0
 $$
+
+
 通过对参数变分从而最小化哈密顿量的平均值，同时得到的试探波函数就近似对应着系统的基态波函数。
 
 比如我们需要求解的单比特哈密顿量为：
